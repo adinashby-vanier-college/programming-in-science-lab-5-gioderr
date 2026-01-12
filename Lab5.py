@@ -19,7 +19,8 @@ def hollow_square(n):
         result += "\n"
     else:
         result += ("*" * n)
-        return result.lstrip()
+    
+    return result.lstrip()
 # 1
 # 12
 # 123
@@ -41,6 +42,7 @@ def sum_of_natural_numbers(n):
     count = 0
     for number in range(n+1):
         count += number
+    
     return count
 
 # Example for n = 4:
@@ -54,7 +56,7 @@ def centered_star_pyramid(n):
     result += ("*")
     result += "\n"
 
-    for i in range (n - 1):
+    for i in range (n-1):
         result += (" " * (n - i - 2))
         result += ("*" * ((i + 1) * 2 + 1))
         result += "\n"
